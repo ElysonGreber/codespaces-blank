@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>joken</title>
+ <!-- <script src="src/gamearb.js"></script> -->
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Carattere&family=Grand+Hotel&family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/codespaces-blank/assets/index-DY_mj09W.js"></script>
+    <link rel="stylesheet" crossorigin href="/codespaces-blank/assets/index-CqAZNr7Q.css">
+  </head>
+  <body>
+ <div class="console">
+        <div class="corpo">
+            <div class="tela">
+                <!-- <div id="lcon" class="battery-light">
+                </div> -->
+                <!-- <button onclick="conectar()" class="wcnct">Wallet Connect</button> -->
+                 <button id="open-connect-modal" class="wcnct">Wallet Connect</button>
+                <div>
+                    <p class="plinks">
+                        Sepolia [
+                        <a href="https://cloud.google.com/application/web3/faucet/ethereum/sepolia" target="_blank" rel="noopener noreferrer">
+                                Faucet 1
+                            </a><a href="https://sepolia-faucet.pk910.de/" target="_blank" rel="noopener noreferrer">
+                                Faucet 2
+                            </a> <a href="https://www.alchemy.com/faucets/ethereum-sepolia" target="_blank" rel="noopener noreferrer">
+                                Faucet 3
+                            </a>] <a href="https://app.uniswap.org/explore/tokens/ethereum_sepolia/0x5dded6d293111fd9967ed2835ce905b1eb2c023e" target="_blank" rel="noopener noreferrer">
+                                Unisawap
+                            </a>
+                        <button id="howToPlayBtn">How to Play</button>
+                    </p>
+                </div>
+                <div class="telaint">
+                    <div>
+                        <p class="pbalance"><span id="conta">Disconnected</span><br><span id="saldo-eth"></span> <span id="saldo-token"></span></p>
+                    </div>
+                    <div class="subg2" style="text-align: center; margin: 10px;">
+                        <!-- <button id="btn-historico" onclick="alternarTabela()"> -->
+                           <button id="btn-historico" style="">Histórico</button>
+                        <div id="historico-container" style="display: none;">
+                            <table id="historico"></table>
+                        </div>
+                    </div>
+                    <div id="mensagem" class="digitado"></div>
+                    <div id="resultado">
+                    </div>
+                    <p id="tx-hash" style="font-family: 'Press Start 2P' , cursive; font-size: 12px; margin-bottom: 0px; z-index: 5; color: #2afd3d"></p>
+                    <div id="t" style="position: absolute; margin: 20px 0px 10px 0; top: 200px; left: 183px;">
+                        <img id="walker" src="img/walk.gif" alt="">
+                    </div>
+                    <div id="estagio" class="plinks"></div>
+                </div>
+            </div>
+            <div class="supbtns">
+                <div>
+                    <p class="btext">Take $ZKP</p>
+                    <div class="btout">
+                        <button onclick="comprarToken()" class="eightbit-black"></button>
+                    </div>
+                </div>
+                <div class="bet">
+                    <p class="btext">Bet</p>
+                    <div class="btout">
+                        <button id="btn-pagar" class="eightbit-black"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="playbtns">
+                <button onclick="jogar(0)" class="btnrock">
+                    <img src="img/handps.png" alt="">
+                </button>
+                <button onclick="jogar(1)" class="btnrock">
+                    <img style="mix-blend-mode: color-burn; image-rendering: pixelated;" src="img/handbp.png" alt="">
+                </button>
+                <button onclick="jogar(2)" class="btnrock">
+                    <img src="img/handpt.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="resultado" style="z-index: 4;position: relative;font-family: 'Press Start 2P', 
+    cursive;font-size: 25px; margin-bottom: 0px;margin-top: 5px;
+    text-shadow: 0 3px 0 #03ff25, 0 8px 0 #e3dc09;">
+    </div>
+    <div id="duelo" style=" text-align:center;">
+        <img id="img-jogador" src="" alt="Escolha do jogador" style="height:100px; width: 100px; display: none;">
+        <br>
+        <span id="duelo-texto"></span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  </body>
+</html>
